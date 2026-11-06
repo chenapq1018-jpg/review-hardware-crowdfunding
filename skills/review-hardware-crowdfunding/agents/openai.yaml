@@ -1,0 +1,4 @@
+interface:
+  display_name: 硬件众筹接单评审
+  short_description: 用预热、交付和合同数据判断接单、补测或放弃，并给出改判条件
+  default_prompt: 请用 $review-hardware-crowdfunding 帮我判断这单值得接吗，优先指出最可能改变结论的一条证据。

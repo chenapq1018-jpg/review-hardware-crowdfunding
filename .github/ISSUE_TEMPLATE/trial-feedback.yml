@@ -1,0 +1,57 @@
+name: 试用反馈
+description: 记录它改变了什么决定，或指出算错、漏掉和没有帮助的地方
+title: "[试用反馈] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢试用。反馈及 GitHub 用户名会公开显示，请只填写可公开的脱敏摘要。所有结果都欢迎，包括使用中断或没有帮助。
+  - type: dropdown
+    id: occasion
+    attributes:
+      label: 这次用在什么场景？
+      options:
+        - 第一个真实项目
+        - 同一项目补充了新证据
+        - 第二个或更多真实项目
+        - 虚构案例或学习
+    validations:
+      required: true
+  - type: dropdown
+    id: method
+    attributes:
+      label: 使用入口
+      options:
+        - 安装 Skill
+        - 复制免安装试用说明
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: 使用的 AI 与模型
+      placeholder: 例如 Codex 或 Claude，以及可见的模型名称
+  - type: textarea
+    id: before
+    attributes:
+      label: 你原本准备怎么决定？
+      placeholder: 用一两句话写下原来的决定和主要理由
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: 用完后，你实际核实或调整了什么？
+      placeholder: 可以写实际采取的动作，也可以写没有变化或无法完成使用
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: 哪一点最需要改？
+      placeholder: 例如漏掉决定性事实、算错账、问得太多，或与普通 AI 相比没有改善
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: 可公开的脱敏片段（选填）
+      placeholder: 只提供足以复现问题的脱敏输入和输出
