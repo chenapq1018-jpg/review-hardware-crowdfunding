@@ -1,4 +1,4 @@
 interface:
-  display_name: "硬件公司众筹自评"
-  short_description: "帮硬件公司自评产品、预热、传播、利润和交付，判断是否按期上线"
-  default_prompt: "请用 $review-hardware-crowdfunding 评审我们公司的产品和众筹计划，判断能否按期上线，并给出优先补齐的证据与改进动作。"
+  display_name: "硬件众筹评审与改进"
+  short_description: "读产品和众筹材料，直接给出改稿、付费验证与预算，帮助公司决定下一步投入"
+  default_prompt: "请用 $review-hardware-crowdfunding 读取我们的众筹材料，找出最影响下一笔投入的问题，并交付一份可直接执行的改稿、验证方案或预算。"

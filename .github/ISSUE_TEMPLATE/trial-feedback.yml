@@ -1,5 +1,5 @@
 name: 试用反馈
-description: 记录公司自评后改变了什么决定，或指出算错、漏掉和没有帮助的地方
+description: 记录实际采用的改稿、方案或预算，指出空泛、算错和遗漏的地方
 title: "[试用反馈] "
 body:
   - type: markdown
@@ -50,15 +50,15 @@ body:
   - type: textarea
     id: outcome
     attributes:
-      label: 自评后，你们实际核实或调整了什么？
-      placeholder: 例如补查付款数据、修改页面或视频、调整预算、缩小首批或延期，也可以写没有变化
+      label: 你们实际采用了哪一段成果，改变了什么？
+      placeholder: 例如采用了哪句首屏、哪段分镜、哪个实验或预算决定，也可以写完全没有采用以及原因
     validations:
       required: true
   - type: textarea
     id: improvement
     attributes:
       label: 哪一点最需要改？
-      placeholder: 例如漏掉决定性事实、算错账、问得太多，或与普通 AI 相比没有改善
+      placeholder: 例如只有泛泛建议、改稿不可用、算错账、问得太多，或与直接问普通 AI 相比没有改善
   - type: textarea
     id: excerpt
     attributes:
