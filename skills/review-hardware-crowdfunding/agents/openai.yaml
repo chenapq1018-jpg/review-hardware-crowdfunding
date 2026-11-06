@@ -1,4 +1,4 @@
 interface:
-  display_name: 硬件众筹接单评审
-  short_description: 用预热、交付和合同数据判断接单、补测或放弃，并给出改判条件
-  default_prompt: 请用 $review-hardware-crowdfunding 帮我判断这单值得接吗，优先指出最可能改变结论的一条证据。
+  display_name: "硬件公司众筹自评"
+  short_description: "帮硬件公司自评产品、预热、传播、利润和交付，判断是否按期上线"
+  default_prompt: "请用 $review-hardware-crowdfunding 评审我们公司的产品和众筹计划，判断能否按期上线，并给出优先补齐的证据与改进动作。"

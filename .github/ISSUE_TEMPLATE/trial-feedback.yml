@@ -1,5 +1,5 @@
 name: 试用反馈
-description: 记录它改变了什么决定，或指出算错、漏掉和没有帮助的地方
+description: 记录公司自评后改变了什么决定，或指出算错、漏掉和没有帮助的地方
 title: "[试用反馈] "
 body:
   - type: markdown
@@ -11,12 +11,21 @@ body:
     attributes:
       label: 这次用在什么场景？
       options:
-        - 第一个真实项目
-        - 同一项目补充了新证据
-        - 第二个或更多真实项目
+        - 第一个真实产品的众筹自评
+        - 同一产品补充了新证据
+        - 第二个或更多真实产品
         - 虚构案例或学习
     validations:
       required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: 产品目前处于什么阶段？
+      options:
+        - 产品定义或样机探索
+        - 准备预热或上线
+        - 预热或众筹进行中
+        - 已结束众筹，复盘或准备下一轮
   - type: dropdown
     id: method
     attributes:
@@ -34,15 +43,15 @@ body:
   - type: textarea
     id: before
     attributes:
-      label: 你原本准备怎么决定？
-      placeholder: 用一两句话写下原来的决定和主要理由
+      label: 你们原本准备怎么做？
+      placeholder: 例如按原日期上线、先投入预热，或调整产品、价格和交付承诺
     validations:
       required: true
   - type: textarea
     id: outcome
     attributes:
-      label: 用完后，你实际核实或调整了什么？
-      placeholder: 可以写实际采取的动作，也可以写没有变化或无法完成使用
+      label: 自评后，你们实际核实或调整了什么？
+      placeholder: 例如补查付款数据、修改页面或视频、调整预算、缩小首批或延期，也可以写没有变化
     validations:
       required: true
   - type: textarea
