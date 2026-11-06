@@ -1,36 +1,34 @@
-# 用已有材料直接试一轮
+# 免安装试用
 
-准备手边最需要推进的一项材料，例如页面草稿、视频脚本、用户反馈、预热导出或报价。说明这次要拍板的事情。资料可以不完整。
+中文 | [English](TRY_IT.en.md)
 
-将下面文字复制到能够打开链接的 AI，再附上材料。
+准备一份想让 AI 帮忙看的材料，比如产品介绍、众筹页面、视频脚本、预热数据或报价。说明你现在要决定什么，就可以开始。
+
+把下面这段话复制到能打开链接的 AI，再附上资料。
 
 ```text
-请读取这套硬件众筹评审与改进方法及其中对应的参考文件。
+请按照这个 Smart Hardware Crowdfunding（智能硬件众筹评审）Skill 的方法，帮我看下面的项目。
 https://github.com/chenapq1018-jpg/review-hardware-crowdfunding/blob/main/skills/review-hardware-crowdfunding/SKILL.md
 
-我们是一家准备做众筹的硬件公司。下面是已有材料和本次要决定的事项。
+请先读取 Skill 和需要的参考文件，再看我提供的材料。指出影响判断的具体问题，并完成相应的修改或测算，比如改好首屏、写视频开场、设计付费测试，或者重算广告预算。
 
-先自行读取材料，把主要判断对应到原句、镜头或数据。完成最值得先做的一份具体成果，例如可替换首屏和视频开场、一页产品定义、付费验证安排、可复算预算或交付承诺修订。遇到决定性未知时，先完成已有材料支持的工作，再集中问最多三个问题。
+资料不足时先分析已有内容，再问最多三个关键问题。需要算账时使用随附脚本。运行不了脚本时，列出计算过程和假设，并说明未运行脚本。
 
-涉及金额时，按方法中的计算说明核对批次、费用与时点。能够运行代码时使用随附计算脚本，环境不支持时列清公式、假设及未运行工具的情况。判断材料不足时，说明可以先投入哪一步，以及什么证据会改变决定。
+我们现在要决定的事
+[填写]
 
-本次要决定的事项
-[直接写你正在犹豫的决定]
-
-现有材料
-[粘贴内容、附链接或上传文件]
+已有资料
+[粘贴内容、提供链接或上传文件]
 ```
 
-如果 AI 无法读取链接，可从仓库下载并上传 [核心方法](skills/review-hardware-crowdfunding/SKILL.md)、[判断模式](skills/review-hardware-crowdfunding/references/decision-patterns.md) 和 [交付规格](skills/review-hardware-crowdfunding/references/deliverables.md)。需要算账时附上 [计算说明](skills/review-hardware-crowdfunding/references/calculation.md) 与 [计算脚本](skills/review-hardware-crowdfunding/scripts/campaign_math.py)。
+AI 无法打开链接时，可以下载相关文件后上传。[Skill 方法](skills/review-hardware-crowdfunding/SKILL.md) · [评审方法](skills/review-hardware-crowdfunding/references/decision-patterns.md) · [方案示例](skills/review-hardware-crowdfunding/references/deliverables.md) · [计算说明](skills/review-hardware-crowdfunding/references/calculation.md) · [计算脚本](skills/review-hardware-crowdfunding/scripts/campaign_math.py)
 
-## 先看一次完整结果
+## 先用案例试试
 
-[虚构的 FrameDock 案例](skills/review-hardware-crowdfunding/references/example.md) 从原始页面、视频、用户记录和报价出发，展示购买理由、可直接采用的改稿、分镜、预算和验证安排。可以先只给 AI 案例中的原始材料，再比较它实际交出的成果。
+可以先把 FrameDock 虚构案例中的产品资料发给 AI，再对照后面的分析、文案和预算，看它的回答有没有帮助。[查看案例](skills/review-hardware-crowdfunding/references/example.md)
 
-## 留下采用情况
+## 反馈
 
-“我们原本准备____。实际采用了它给的____。因此改了____。仍然最空泛或有误的部分是____。”
+可以简单写下原来的打算、实际采用的建议，以及仍然不好用的地方。提交前请删去敏感信息，GitHub 用户名和反馈内容会公开显示。[提交反馈](https://github.com/chenapq1018-jpg/review-hardware-crowdfunding/issues/new?template=trial-feedback.yml)
 
-反馈可以自己保留，也可以提交脱敏摘要。GitHub 用户名和反馈内容会公开显示。[打开反馈表](https://github.com/chenapq1018-jpg/review-hardware-crowdfunding/issues/new?template=trial-feedback.yml)
-
-[返回项目首页](README.md)
+[返回首页](README.md)

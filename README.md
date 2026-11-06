@@ -1,54 +1,69 @@
-# 硬件众筹评审与改进
+# Smart Hardware Crowdfunding
 
-给准备做众筹的硬件公司使用。交出已有产品资料、页面、视频、预热导出或报价，得到一份能直接交给团队执行的修订，以及下一笔投入该怎样决定。
+**智能硬件众筹评审**
 
-**[看完整输入与成品](skills/review-hardware-crowdfunding/references/example.md)** · **[免安装使用](TRY_IT.md)** · **[提交脱敏反馈](https://github.com/chenapq1018-jpg/review-hardware-crowdfunding/issues/new?template=trial-feedback.yml)**
+中文 | [English](README.en.md)
 
-## 拿现有材料来
+为准备做 Kickstarter 等众筹的智能硬件团队提供产品和运营评审。覆盖产品定义、预热、定价、广告投放和量产交付，帮助团队判断产品是否适合众筹、什么时候上线、哪些问题要先解决。
 
-| 你交给它什么 | 应该拿回什么 |
+把已有的产品介绍、页面、视频脚本或经营数据发给 AI 就可以开始。它会结合资料提出建议，并完成需要修改的文案、测试方案或预算测算。
+
+## 功能
+
+| 方向 | 可以做什么 |
 | --- | --- |
-| 产品定义、功能和用户记录 | 推荐的核心用户、一个主要购买理由、功能取舍与最小验证 |
-| 众筹页面、主视频或脚本 | 原句与改稿对照、可替换首屏、15—30 秒分镜及补拍清单 |
-| 预热和付款导出 | 按批次复算的漏斗、证据能支持的决定及一份付费验证安排 |
-| 成本、服务合同和预算 | 可复算的订单贡献、佣金抵扣、广告上限与现金缺口 |
-| 量产状态和交期承诺 | 关键验证、首批范围、角色分工与可采用的交付沟通草稿 |
+| 产品定义 | 分析目标用户、使用场景和替代方案，梳理购买理由，检查新增功能是否值得用户付钱 |
+| 预热与需求验证 | 核对留资、订金、全款和退款数据，设计价格测试与付费测试，估算首日订单 |
+| 页面与主视频 | 检查卖点、演示、用户故事和背书，改写首屏文案、视频开场及拍摄脚本 |
+| 定价与广告 | 计算订单利润、服务商费用、可承受的获客成本和资金缺口，调整投放预算 |
+| 量产与交付 | 检查样机、试产、质量、生产排期和售后准备，修改首批计划与交付说明 |
 
-它先读已有材料，选择最影响当前决策的问题，完成对应成果。必要追问集中在最后。结论保持简短，改稿、实验与测算按任务需要交完整。
-
-例如，完整虚构案例里，CEO 给了一份翻拍器草稿。页面承诺“十倍快、零操作”，实测只支持固定底片和逐格对齐更省事。成果包含面向胶片摄影者的购买理由、首屏、30 秒视频脚本及付费实验。
-
-同一案例中，200 个净订单最多支持 **7,046 美元**广告费才能打平。团队原定 9,000 美元，计算出的本轮亏损为 **1,954 美元**。改稿与预算共同决定先验证什么。[查看完整案例](skills/review-hardware-crowdfunding/references/example.md)
-
-## 内置的方法与工具
-
-- [十类判断模式](skills/review-hardware-crowdfunding/references/decision-patterns.md) 将材料中的信号连到决策错误、具体改法与证据边界，涵盖使用负担、尝鲜人群、首日预热、视频、信任、KOL、价格、代理执行及交付。
-- [五类成品规格与示例](skills/review-hardware-crowdfunding/references/deliverables.md) 展示产品定义、首屏分镜、实验安排、预算与交付修订应做到什么程度。
-- [计算工具与输入说明](skills/review-hardware-crowdfunding/references/calculation.md) 使用 Python 标准库复算预算、独立批次和现金时点。AI 从现有资料整理输入，缺失成本保持未知。
-- [核心工作流程](skills/review-hardware-crowdfunding/SKILL.md) 约束读取、判断、改进、核算与复评。支持明确批准的有限亏损试验，并显示实际损益。
+资料不全时，会先分析已有内容，再问影响判断的问题。团队拿到新数据后，可以继续评审同一个项目。
 
 ## 安装
 
-在支持 Skills 的 AI 环境中运行下面一行，按提示选择工具。
+在支持 Agent Skills 的工具中运行。
 
 ```bash
 npx skills add chenapq1018-jpg/review-hardware-crowdfunding --skill review-hardware-crowdfunding
 ```
 
-安装工具的环境要求见官方说明，计算脚本需要 Python 3。[安装工具说明](https://github.com/vercel-labs/skills)
+安装环境要求见官方说明，预算计算脚本需要 Python 3。[安装工具说明](https://github.com/vercel-labs/skills)
 
-安装后直接提交已有材料。
+## 使用
+
+安装后直接提问，并附上现有资料。
 
 ```text
-请用 $review-hardware-crowdfunding 处理下面这份众筹材料。
-我们这次要决定下一笔钱投在哪里。
-请先读材料，给结论，并完成最值得先做的一份改稿、验证方案或预算。
+请用 $review-hardware-crowdfunding 看一下我们的众筹方案。
+下面是产品介绍、预热数据和成本表。
+现在适合上线吗？最需要先解决哪几个问题？
 ```
 
-## 使用与反馈
+也可以只处理一个具体问题。
 
-本版本免费提供给个人和团队用于项目评审与改进。成果以给定材料和明确假设为依据，当前平台规则与竞品信息由使用时查证。
+```text
+请用 $review-hardware-crowdfunding 看这份众筹页面和视频脚本。
+帮我找出影响购买的地方，改好首屏和视频前30秒。
+```
 
-本版包含完整的虚构输入与成品示例，计算脚本已执行数值校验，修订流程已用虚构创业项目独立试跑。真实公司是否采用改稿、是否重复使用、是否改善决策，仍需实际反馈。
+可以直接粘贴文字、提供链接或上传文件。[免安装试用](TRY_IT.md)
 
-反馈最有价值的内容是你实际采用了哪一段成果、据此改了什么，以及哪一处依然空泛或算错。反馈和 GitHub 用户名会公开显示，请只提交去掉身份和敏感信息的摘要。[反馈入口](https://github.com/chenapq1018-jpg/review-hardware-crowdfunding/issues/new?template=trial-feedback.yml)
+## 示例
+
+FrameDock 是案例中虚构的一款底片翻拍器。团队在“家庭旧照片”和“胶片摄影爱好者”两个方向之间犹豫，页面写着“十倍快、零操作”，但试用记录只说明固定和对齐底片更省事。
+
+案例展示了如何选择目标用户、重写首屏和视频开场、安排付费测试，以及核算广告预算。按案例中的报价和销量，原定 9,000 美元广告费会让这轮项目亏损 1,954 美元，盈亏平衡时最多能花 7,046 美元。[查看完整案例](skills/review-hardware-crowdfunding/references/example.md)
+
+## 文件说明
+
+- 评审范围和使用步骤。[SKILL.md](skills/review-hardware-crowdfunding/SKILL.md)
+- 众筹中常见的问题，以及如何判断和修改。[评审方法](skills/review-hardware-crowdfunding/references/decision-patterns.md)
+- 产品定义、文案、测试和交付计划的写法。[方案示例](skills/review-hardware-crowdfunding/references/deliverables.md)
+- 预算、获客成本和现金收支的计算方法。[计算说明](skills/review-hardware-crowdfunding/references/calculation.md)
+
+## 反馈
+
+个人和团队可以免费使用。目前完成了虚构案例测试和计算检查，真实项目中的效果还需要使用反馈。
+
+欢迎告诉我们哪条建议被采用了、改稿能不能用、哪里算错或漏看了。提交前请删去公司、客户及其他敏感信息，GitHub 用户名和反馈内容会公开显示。[提交反馈](https://github.com/chenapq1018-jpg/review-hardware-crowdfunding/issues/new?template=trial-feedback.yml)

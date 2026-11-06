@@ -1,4 +1,4 @@
 interface:
-  display_name: "硬件众筹评审与改进"
-  short_description: "读产品和众筹材料，直接给出改稿、付费验证与预算，帮助公司决定下一步投入"
-  default_prompt: "请用 $review-hardware-crowdfunding 读取我们的众筹材料，找出最影响下一笔投入的问题，并交付一份可直接执行的改稿、验证方案或预算。"
+  display_name: "智能硬件众筹评审"
+  short_description: "评审智能硬件的产品、众筹方案和预算，修改页面与视频，帮助团队准备上线"
+  default_prompt: "请用 $review-hardware-crowdfunding 看一下我们的智能硬件众筹方案，找出主要问题，并帮我们修改文案、测试计划或预算。"

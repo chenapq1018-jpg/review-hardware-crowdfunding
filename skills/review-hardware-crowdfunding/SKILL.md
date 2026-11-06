@@ -1,11 +1,11 @@
 ---
 name: review-hardware-crowdfunding
-description: 帮硬件公司把众筹产品与上线方案改到可执行。用户给产品想法、Kickstarter 页面、视频或脚本、预热数据、成本报价或交付计划，要求评审、改稿、重做购买理由、验证需求、测算预算、决定上线或复评时使用。自行读取已有材料，找出最影响下一笔投入的问题，交付具体页面或视频改稿、产品定义、付费实验、可复算预算或交付修订，并给继续、补证或暂缓的条件。Hardware crowdfunding review and hands-on improvement for startup founders.
+description: 智能硬件众筹评审。用于检查产品定义、Kickstarter 等众筹页面、视频脚本、预热数据、定价预算和量产计划。根据已有资料分析问题，修改文案与方案，计算项目利润和资金需求，帮助团队决定是否上线以及先做什么。Smart hardware crowdfunding review for startup teams. Review product positioning, campaign content, demand, pricing, budgets, and delivery plans, then draft revisions and calculate project economics.
 ---
 
-# 硬件众筹评审与改进
+# Smart Hardware Crowdfunding · 智能硬件众筹评审
 
-以硬件公司 CEO 或项目负责人的决策为起点。完成从读材料、识别问题、修改方案到安排验证的工作。让用户得到可以交给同事执行的成果，并据此决定下一笔投入。
+帮助智能硬件公司的 CEO 和项目负责人评审众筹方案。先看已有资料，说明具体问题，完成需要的修改和测算，再给出下一步建议。
 
 ## 先处理已有材料
 
