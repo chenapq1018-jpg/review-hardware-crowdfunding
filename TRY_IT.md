@@ -1,34 +1,34 @@
-# 免安装试用
+# Try without installing
 
-中文 | [English](TRY_IT.en.md)
+English | [简体中文](TRY_IT.zh-CN.md)
 
-准备一份想让 AI 帮忙看的材料，比如产品介绍、众筹页面、视频脚本、预热数据或报价。说明你现在要决定什么，就可以开始。
+Start with a product brief, campaign page, video script, pre-launch data, or quote. Say what you need to decide.
 
-把下面这段话复制到能打开链接的 AI，再附上资料。
+Copy the prompt below into an AI tool that can open links, then attach your material.
 
 ```text
-请按照这个 Smart Hardware Crowdfunding（智能硬件众筹评审）Skill 的方法，帮我看下面的项目。
+Use this Smart Hardware Crowdfunding skill to review the project below.
 https://github.com/chenapq1018-jpg/review-hardware-crowdfunding/blob/main/skills/review-hardware-crowdfunding/SKILL.md
 
-请先读取 Skill 和需要的参考文件，再看我提供的材料。指出影响判断的具体问题，并完成相应的修改或测算，比如改好首屏、写视频开场、设计付费测试，或者重算广告预算。
+Read the skill and the relevant reference files, then review my material. Identify the specific problems that affect the decision and make the corresponding changes or calculations. This could mean rewriting the hero section, drafting a video opening, designing a payment test, or revising the ad budget.
 
-资料不足时先分析已有内容，再问最多三个关键问题。需要算账时使用随附脚本。运行不了脚本时，列出计算过程和假设，并说明未运行脚本。
+Work with the material available, then ask up to three important questions. Use the included script for calculations when possible. If you cannot run it, show the formulas and assumptions and say that the script was not run. Respond in English.
 
-我们现在要决定的事
-[填写]
+The decision we need to make
+[Fill in]
 
-已有资料
-[粘贴内容、提供链接或上传文件]
+Our material
+[Paste text, share links, or upload files]
 ```
 
-AI 无法打开链接时，可以下载相关文件后上传。[Skill 方法](skills/review-hardware-crowdfunding/SKILL.md) · [评审方法](skills/review-hardware-crowdfunding/references/decision-patterns.md) · [方案示例](skills/review-hardware-crowdfunding/references/deliverables.md) · [计算说明](skills/review-hardware-crowdfunding/references/calculation.md) · [计算脚本](skills/review-hardware-crowdfunding/scripts/campaign_math.py)
+If the AI cannot open the links, download and upload the relevant files. [Skill instructions](skills/review-hardware-crowdfunding/SKILL.md) · [Review methods](skills/review-hardware-crowdfunding/references/decision-patterns.md) · [Sample outputs](skills/review-hardware-crowdfunding/references/deliverables.md) · [Calculation guide](skills/review-hardware-crowdfunding/references/calculation.md) · [Python script](skills/review-hardware-crowdfunding/scripts/campaign_math.py)
 
-## 先用案例试试
+## Try the example first
 
-可以先把 FrameDock 虚构案例中的产品资料发给 AI，再对照后面的分析、文案和预算，看它的回答有没有帮助。[查看案例](skills/review-hardware-crowdfunding/references/example.md)
+Give the AI only the project material at the start of the fictional FrameDock example. Compare its answer with the analysis, copy, and budget that follow. The example is written in Chinese. [Open the example](skills/review-hardware-crowdfunding/references/example.md)
 
-## 反馈
+## Feedback
 
-可以简单写下原来的打算、实际采用的建议，以及仍然不好用的地方。提交前请删去敏感信息，GitHub 用户名和反馈内容会公开显示。[提交反馈](https://github.com/chenapq1018-jpg/review-hardware-crowdfunding/issues/new?template=trial-feedback.yml)
+Tell us what you originally planned, which recommendations you used, and what still needs work. Remove sensitive information before posting. Your GitHub username and feedback will be public. [Send feedback](https://github.com/chenapq1018-jpg/review-hardware-crowdfunding/issues/new?template=trial-feedback.yml)
 
-[返回首页](README.md)
+[Back to the project](README.md)
